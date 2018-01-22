@@ -40,3 +40,12 @@ do{
     console.log("nummer " + (limit - q));
 }while (q < limit);
 
+## ForEach
+ForEach løkke. Denne metode stiller en funktion til rådighed en gang for hvert element i et array - i orden. 
+
+let names = ["Bo", "Alice", "Karsten", "Pia", "Lis", "Bob", "Andy", "Jack"];
+
+names.forEach(name => {
+    
+    console.log(name);
+});
