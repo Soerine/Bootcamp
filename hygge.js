@@ -107,20 +107,77 @@ function sammensaetTekst(resultat) {
 
 var resultat = ("Mickey Mouse");
 
+function sammensaetTekst(forste, anden) {
+    return forste + " " + anden;
+}
+
+var resultat = sammensaetTekst("Mickey", "Mouse");
+
 console.log(resultat); // Forventede resultat: "Mickey Mouse"
 
-//BMI
-const readline = require('readline');
+console.log(resultat); // Forventede resultat: "Mickey Mouse"
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-rl.question('Write your age: ', (answer) => {
-    // TODO: Log the answer in a database
-    console.log(`Thank you for your valuable feedback: ${answer}`);
+console.log("----BMI----")
+let weight = 70;
+let height = 182;
+function bmi(weight, height) {
+    let result = weight / (height / 100 * height / 100);
+    console.log(result);
+    if (result < 18.5) {
+        console.log("undervægtig");
+    } if (result >= 18.5 && result < 24.9) {
+        console.log("normalvægtig");
+    } if (result > 25 && result < 29.9) {
+        console.log("overvægtig");
+    } if (result > 30 && result < 39.9) {
+        console.log("fedme");
+    } if (result > 39.9) {
+        console.log("svær fedme");
+    }
+}
+bmi(weight, height);
 
-    rl.close();
-});
+console.log("---Valuta format---");
+function valuta(num) {
+    return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") //regular expression
+
+}
+console.log(valuta(2355));
+
+console.log("---Mellemrum---");
+
+let str = " ollo "
+function fjernMellemrumFoerOgEfter() {
+
+    str = str.replace(/\s/g, '');
+}
+fjernMellemrumFoerOgEfter()
+console.log(str);
+
+console.log("---Lig eller Ulig---");
+
+console.log("---Even or Odd---");
+
+function EvenOrOdd(num) {
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(EvenOrOdd(8));
+
+console.log("---Roulette Array---");
+
+let color = ["green", "red", "pink"];//array med tilfældige farver.
+function roulette(n, arr) {//opretter en funktion, som har to parametre, den første symboliserer tallet og den anden kalder arrayet.
+    return arr[n % arr.length];//her bruges return funkionen til at kalde arr, n kombineret med modulus skaber en cirkel. Således at tallende i arrayet starter forfra, når arrayet slutter.
+}
+console.log(roulette(7, color));//kald funktionen, skriv nummer, som refererer til en farve i arrayet. 
+console.log("---Vinkel 360---");
+function vinkel(tal) {
+    return tal % 360;
+} console.log(vinkel(725));
 
 
+console.log("---Afstand 2D---");
