@@ -1,7 +1,7 @@
-var satan="Et eller andet";
+let satan="Et eller andet";
 console.log(satan);
 
-var minAlder="21";
+let minAlder=21;
 console.log(minAlder);
 
 let byNavn="Roskilde";

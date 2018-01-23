@@ -7,20 +7,21 @@ var="Denne tekst". Her er værdien af variablen: "Denne tekst", mens i den "glob
 ## String:
 Tekst. 
 
-var="pølse";
+var test="pølse";
 
 ## Number:
 Som navnet siger, så er dette numre. Disse skal **ikke** stå i gåseøjne, da dette automatisk gør dem til en string.
 
-var=3;
+var test=3;
 
 ## Boolean:
 True eller false.
 
-var=true;
+var test=true;
 
 ## Array:
 Et array er en liste, dette kunne f.eks. være en liste af billeder til et galleri: 
 
-var=Array(bum.jpg, bum2.jpg, bum3.jpg).
+var test=Array("bum.jpg", "bum2.jpg", "bum3.jpg");
+var test=["bum.jpg", "bum2.jpg", "bum3.jpg"];
 

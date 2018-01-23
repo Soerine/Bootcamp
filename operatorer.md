@@ -8,7 +8,7 @@ y==x
 
 * === ligmed både value, men også type
 
-* ! 
+* ! vender et udtryk (kan f.eks. ændre en true til false eller omvendt)
 * != ikke ligmed
 * !== hverken ligmed value eller type
 * < mindre end
@@ -20,12 +20,12 @@ y==x
 let forste=4;
 let anden=6;
 console.log(forste + anden);
-* - minus 
+* -minus 
 
 let forste=4;
 let anden=6;
 console.log(forste - anden);
-* * gange
+* *gange
 
 let forste=4;
 let anden=6;
