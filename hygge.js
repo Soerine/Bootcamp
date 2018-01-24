@@ -174,6 +174,7 @@ function roulette(n, arr) {//opretter en funktion, som har to parametre, den fø
     return arr[n % arr.length];//her bruges return funkionen til at kalde arr, n kombineret med modulus skaber en cirkel. Således at tallende i arrayet starter forfra, når arrayet slutter.
 }
 console.log(roulette(7, color));//kald funktionen, skriv nummer, som refererer til en farve i arrayet. 
+
 console.log("---Vinkel 360---");
 function vinkel(tal) {
     return tal % 360;
@@ -181,3 +182,11 @@ function vinkel(tal) {
 
 
 console.log("---Afstand 2D---");
+
+let speedlimit
+let speed
+let roadwork
+console.log("---Fartbøde---");
+function ticket() {
+    if
+}
