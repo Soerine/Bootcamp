@@ -165,7 +165,7 @@ function EvenOrOdd(num) {
         return false;
     }
 }
-console.log(EvenOrOdd(8));
+console.log(EvenOrOdd(8.2));
 
 console.log("---Roulette Array---");
 
