@@ -100,6 +100,7 @@ if (email == "") {
 
 }
 console.log(fejlbeskeder);
+
 //Fix koden
 
 function sammensaetTekst(resultat) {
