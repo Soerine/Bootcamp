@@ -13,33 +13,33 @@
     <div id="content"></div>
 
     <script>
-        fetch('https://swapi.co/api/people/') //kalder siden
+
+        function udskriv(person) {
+            let content = document.getElementById('content');
+            let h1 = document.createElement('h1');
+            h1.textContent = person.name;
+            content.appendChild(h1);
+
+            let p = document.createElement('p');
+            p.textContent = `Eyecolor: ${person.eye_color}, Height: ${person.height} cm`;
+
+            content.appendChild(p);
+
+
+        }
+
+        fetch('https://swapi.co/api/people/')
             .then((response) => {
                 if (response.status == 200) {
                     return response.json();
                 } else {
-                    throw new Error("Response status not 200");
+                    throw new Error("virker ikke");
                 }
-
             })
+
+
             .then((json) => {
-                let content = document.getElementById('content');
-
-                json.results.forEach(person => {
-
-                    let h1 = document.createElement('h1');
-                    h1.textContent = person.name + " " + person.birth_year;
-                    content.appendChild(h1);
-
-                    let p = document.createElement('p');
-                    p.textContent = person.eye_color;
-                    content.appendChild(p);
-
-                    let h3 = document.createElement('h3');
-                    h3.textContent = person.height + " cm";
-                    content.appendChild(h3);
-
-                });
+                json.results.forEach(udskriv);
             })
             .catch(function (error) {
                 console.log(error);
